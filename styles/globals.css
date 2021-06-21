@@ -163,9 +163,12 @@ a {
   gap: 2em;
 }
 
-.intro-container img {
+.intro-container .unset-img {
   min-width: 200px !important;
   max-width: 300px !important;
+}
+
+.intro-container .unset-img img {
   border-radius: 50% !important;
 }
 
