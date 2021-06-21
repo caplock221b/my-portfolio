@@ -1,0 +1,37 @@
+.intern {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.intern > a {
+  flex: 1 1 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.intern > a > img {
+  width: 100%;
+  max-width: 200px;
+  min-width: 150px;
+}
+
+.intern + .intern {
+  margin-top: 1em;
+}
+
+.innerContainer {
+  flex: 1 1 70%;
+}
+
+.site {
+  color: var(--blue);
+  text-decoration: 4px solid var(--grey) underline !important;
+}
+
+.site:hover {
+  color: var(--black);
+  text-decoration: 4px solid var(--shadow-grey) underline !important;
+}
