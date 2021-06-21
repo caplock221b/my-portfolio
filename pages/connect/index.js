@@ -3,7 +3,10 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head';
 import { useEffect } from "react";
-import { scrollToTop } from "../../util/functions";
+import { getName, scrollToTop } from "../../util/functions";
+import SkillIcons from '../../components/SkillIcons';
+
+const tech = ['nextjs', 'css', 'firebase']
 
 const Connect = () => {
     useEffect(() => {
@@ -47,6 +50,18 @@ const Connect = () => {
                                     <span>GitHub</span>
                                 </span>
                                 <span className="handle-link"><a href="https://github.com/caplock221b" target="_blank" rel="noreferrer">/caplock221b</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-white">
+                        <p className="c-blue">This site was built using</p>
+                        <div className="skills">
+                            <div className="list">
+                                {
+                                    tech.map(item => (
+                                        <SkillIcons key={item} name={getName(item)} icon={`/images/${item}.png`} />
+                                    ))
+                                }
                             </div>
                         </div>
                     </div>
