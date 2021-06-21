@@ -1,9 +1,17 @@
 import styles from '../styles/EduItem.module.css'
+import Image from 'next/image'
 
 const EduItem = ({ item }) => {
     return (
         <div className={styles.eduItem + " card-white"}>
-            <img src={`/images/education/${item.id}.png`} alt={item.id} />
+            <div className={styles.unsetImg}>
+                <Image 
+                    src={`/images/education/${item.id}.png`} 
+                    alt={item.id} 
+                    layout="fill" 
+                    className={styles.customImg}
+                />
+            </div>
             <div className={styles.eduInfo}>
                 <div className={styles.block}>
                     <span>Qualification</span>

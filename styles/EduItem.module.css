@@ -6,11 +6,27 @@
   align-items: center;
 }
 
-.eduItem > img {
-  width: 100%;
+.eduItem .unsetImg {
   max-width: 200px;
   min-width: 150px;
   flex: 1 1 25%;
+}
+
+.customImg {
+  object-fit: contain;
+  position: relative !important;
+  height: unset !important;
+}
+
+.unsetImg {
+  width: 100%;
+}
+.unsetImg > div {
+  position: unset !important;
+}
+
+.eduItem img {
+  width: 100%;
 }
 
 .eduItem + .eduItem {

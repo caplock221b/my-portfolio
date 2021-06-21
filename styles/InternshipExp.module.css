@@ -6,13 +6,27 @@
   gap: 1em;
 }
 
+.customImg {
+  object-fit: contain;
+  position: relative !important;
+  height: unset !important;
+}
+
+.unsetImg {
+  width: 100%;
+}
+
+.unsetImg > div {
+  position: unset !important;
+}
+
 .intern > a {
   flex: 1 1 25%;
   display: flex;
   justify-content: center;
 }
 
-.intern > a > img {
+.intern > a > .unsetImg {
   width: 100%;
   max-width: 200px;
   min-width: 150px;

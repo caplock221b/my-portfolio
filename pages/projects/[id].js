@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 import SkillIcons from '../../components/SkillIcons'
 import { db } from '../../util/firebase'
 import { getName, scrollToTop } from '../../util/functions'
+import Image from 'next/image'
 
 export const getStaticPaths = async () => {
     let paths = []
@@ -110,7 +111,14 @@ const ProjectDetails = props => {
                         </div>
                     </div>
                 </div>
-                <img src={`/images/projects/${props.id}.png`} alt={props.id} />
+                <div className="unset-img">
+                    <Image 
+                        alt={props.id} 
+                        src={`/images/projects/${props.id}.png`} 
+                        layout="fill" 
+                        className="custom-img"
+                    />
+                </div>
             </div>
         </>
     );

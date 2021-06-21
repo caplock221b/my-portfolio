@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import SkillIcons from '../components/SkillIcons'
 import { scrollToTop } from '../util/functions'
 import { progLang, frontendTech, backendTech, databases, otherTech } from '../util/homeData'
+import Image from 'next/image'
 
 export default function Home() {
   useEffect(() => {
@@ -15,10 +16,14 @@ export default function Home() {
         <title>Home | Portfolio</title>
       </Head>
       <div className="intro-container card-white">
-        <img 
+      <div className="unset-img">
+        <Image 
+          alt="Profile Photo" 
           src="/images/me.jpeg" 
-          alt="Profile Photo"
+          layout="fill" 
+          className="custom-img"
         />
+      </div>
         <div className="intro">
           <p className="c-blue">About Me</p>
           <p>Hi there! My name is <b>Atharva Jangada</b>.</p>

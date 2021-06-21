@@ -16,7 +16,7 @@ const Connect = () => {
                 <title>Connect | Portfolio</title>
             </Head>
             <div className="connect-container">
-                <div className="title">Let's Connect</div>
+                <div className="title">Let&apos;s Connect</div>
                 <div className="inner-container">
                     <div className="card-white connect">
                         <p className="c-blue">What do I offer?</p>

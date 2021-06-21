@@ -1,11 +1,21 @@
 import styles from '../styles/InternshipExp.module.css'
 import { getName } from '../util/functions';
 import SkillIcons from './SkillIcons';
+import Image from 'next/image'
 
 const InternshipExp = ({ item }) => {
     return (
         <div className={styles.intern + " card-white"}>
-            <a href={item.site ? item.site : ""} target="_blank" rel="noreferrer"><img src={"/images/internships/" + item.id + ".png"} alt={item.id + " Logo"} /></a>
+            <a href={item.site ? item.site : ""} target="_blank" rel="noreferrer">
+                <div className={styles.unsetImg}>
+                    <Image 
+                        src={"/images/internships/" + item.id + ".png"} 
+                        alt={item.id + " Logo"} 
+                        layout="fill" 
+                        className={styles.customImg}
+                    />
+                </div>
+            </a>
             <div className={styles.innerContainer}>
                 <p className="c-blue">{ item.role } at <a className={styles.site} href={item.site ? item.site : ""}>{ item.name }</a></p>
                 <h4>{ item.from } - { item.to }</h4>
