@@ -38,14 +38,14 @@ const Connect = () => {
                                     <FontAwesomeIcon icon={faLinkedin} />
                                     <span>LinkedIn</span>
                                 </span>
-                                <span className="handle-link"><a href="https://www.linkedin.com/in/atharva-jangada" target="_blank">/atharva-jangada</a></span>
+                                <span className="handle-link"><a href="https://www.linkedin.com/in/atharva-jangada" target="_blank" rel="noreferrer">/atharva-jangada</a></span>
                             </div>
                             <div className="handle card-white">
                                 <span>
                                     <FontAwesomeIcon icon={faGithub} />
                                     <span>GitHub</span>
                                 </span>
-                                <span className="handle-link"><a href="https://github.com/caplock221b" target="_blank">/caplock221b</a></span>
+                                <span className="handle-link"><a href="https://github.com/caplock221b" target="_blank" rel="noreferrer">/caplock221b</a></span>
                             </div>
                         </div>
                     </div>

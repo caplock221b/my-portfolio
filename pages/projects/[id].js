@@ -90,13 +90,13 @@ const ProjectDetails = props => {
                     <p>
                         {
                             props.live ?
-                            <a className="go-links" href={props.live} target="_blank">Visit Site</a> : null
+                            <a className="go-links" href={props.live} target="_blank" rel="noreferrer">Visit Site</a> : null
                         }
                     </p>
                     <p>
                         {
                             props.code ?
-                            <a className="go-links" href={props.code} target="_blank">Visit Code</a> : null
+                            <a className="go-links" href={props.code} target="_blank" rel="noreferrer">Visit Code</a> : null
                         }
                     </p>
                     <div className="skills">
