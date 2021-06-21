@@ -33,6 +33,7 @@ const Internships = ({ info }) => {
         <>
             <Head>
                 <title>Internships | Portfolio</title>
+                <meta name="description" content="Atharva Jangada's Portfolio" />
             </Head>
             <div className="intern-container">
                 <div className="title">My Internships</div>

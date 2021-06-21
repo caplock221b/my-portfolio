@@ -78,7 +78,8 @@ const ProjectDetails = props => {
     return (
         <>
             <Head>
-                <title>Projects | Portfolio</title>
+                <title>{props.name} | Projects | Portfolio</title>
+                <meta name="description" content="Atharva Jangada's Portfolio" />
             </Head>
             <div className="project-details-container">
                 <div className="go-back" onClick={handleGoBack}>

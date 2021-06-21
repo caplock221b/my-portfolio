@@ -14,6 +14,7 @@ const Connect = () => {
         <>
             <Head>
                 <title>Connect | Portfolio</title>
+                <meta name="description" content="Atharva Jangada's Portfolio" />
             </Head>
             <div className="connect-container">
                 <div className="title">Let&apos;s Connect</div>

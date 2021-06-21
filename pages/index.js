@@ -14,6 +14,7 @@ export default function Home() {
     <>
       <Head>
         <title>Home | Portfolio</title>
+        <meta name="description" content="Atharva Jangada's Portfolio" />
       </Head>
       <div className="intro-container card-white">
       <div className="unset-img">

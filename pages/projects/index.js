@@ -31,6 +31,7 @@ const Projects = ({ info }) => {
         <>
             <Head>
                 <title>Projects | Portfolio</title>
+                <meta name="description" content="Atharva Jangada's Portfolio" />
             </Head>
             <div className="outer-container">
                 <div className="title">My Projects</div>

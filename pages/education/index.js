@@ -31,6 +31,7 @@ const Education = ({ info }) => {
         <>
             <Head>
                 <title>Education | Portfolio</title>
+                <meta name="description" content="Atharva Jangada's Portfolio" />
             </Head>
             <div className="edu-container">
                 <div className="title">My Education</div>
