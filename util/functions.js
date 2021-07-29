@@ -34,5 +34,7 @@ export const getName = name => {
             return 'Redux'
         case 'sass':
             return 'Sass'
+        case 'sharepoint':
+            return 'MS SharePoint'
     }
 }
