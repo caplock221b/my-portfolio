@@ -1,18 +1,20 @@
-import { db } from "../../util/firebase";
 import Head from "next/head";
-import EduItem from "../../components/EduItem";
 import { useEffect } from "react";
+import { db } from "../../util/firebase";
 import { scrollToTop } from "../../util/functions";
+import InternshipExp from "../../components/InternshipExp";
 
 export const getStaticProps = async () => {
   let allInfo = [];
   try {
     const querySnapshot = await db
-      .collection("education")
-      .orderBy("to", "desc")
+      .collection("internships")
+      .orderBy("position", "desc")
       .get();
     querySnapshot.forEach((doc) => {
-      allInfo.push({ ...doc.data() });
+      allInfo.push({
+        ...doc.data(),
+      });
     });
   } catch (err) {
     console.log(err);
@@ -24,7 +26,7 @@ export const getStaticProps = async () => {
   };
 };
 
-const Education = ({ info }) => {
+const Experience = ({ info }) => {
   useEffect(() => {
     scrollToTop();
   }, []);
@@ -32,17 +34,17 @@ const Education = ({ info }) => {
   return (
     <>
       <Head>
-        <title>Education | Portfolio</title>
+        <title>Experience | Portfolio</title>
         <meta name="description" content="Atharva Jangada's Portfolio" />
       </Head>
-      <div className="edu-container">
-        <div className="title">My Education</div>
+      <div className="intern-container">
+        <div className="title">My Work Experience</div>
         {info.map((item) => (
-          <EduItem key={item.id} item={item} />
+          <InternshipExp key={item.position} item={item} />
         ))}
       </div>
     </>
   );
 };
 
-export default Education;
+export default Experience;

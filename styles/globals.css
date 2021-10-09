@@ -95,6 +95,7 @@ a {
 }
 
 .nav-ul > li {
+  transition: all 250ms ease-in-out;
   margin: 0 1em;
   padding: 0.8em 1em;
   margin-top: 0.5em;
