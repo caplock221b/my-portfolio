@@ -1,4 +1,8 @@
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faGoogleDrive,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
@@ -29,12 +33,26 @@ const Connect = () => {
             </p>
             <p>I can help you convert your idea into code.</p>
             <p>
-              If nothing else, we can have a friendly conversation at least! :
-              {`)`}
+              If nothing else, we can have a friendly conversation at least! 😀
             </p>
           </div>
           <div className="socials">
             <div className="handles">
+              <div className="handle card-white">
+                <span>
+                  <FontAwesomeIcon icon={faGoogleDrive} />
+                  <span>Resume</span>
+                </span>
+                <span className="handle-link">
+                  <a
+                    href="https://drive.google.com/file/d/1T_c-uqjz6FdrgwY_5fYSY3rbZc2TAXb-/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Link
+                  </a>
+                </span>
+              </div>
               <div className="handle card-white">
                 <span>
                   <FontAwesomeIcon icon={faEnvelope} />

@@ -36,5 +36,9 @@ export const getName = (name) => {
       return "Sass";
     case "sharepoint":
       return "MS SharePoint";
+    case "recoil":
+      return "RecoilJS";
+    case "postgres":
+      return "PostgreSQL";
   }
 };

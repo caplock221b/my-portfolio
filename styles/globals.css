@@ -216,7 +216,7 @@ a {
 }
 
 .socials > .handles > .handle {
-  flex: 1 1 30%;
+  flex: 1 1 20%;
   min-width: 220px;
   display: flex;
   justify-content: center;
@@ -335,5 +335,13 @@ a {
 
   .go-back {
     display: none;
+  }
+
+  .socials {
+    margin-bottom: 1em;
+  }
+
+  .handle.card-white {
+    margin: 0;
   }
 }
