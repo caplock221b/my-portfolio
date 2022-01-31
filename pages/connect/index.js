@@ -45,7 +45,7 @@ const Connect = () => {
                 </span>
                 <span className="handle-link">
                   <a
-                    href="https://drive.google.com/file/d/1T_c-uqjz6FdrgwY_5fYSY3rbZc2TAXb-/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1xuI_Imwva3xHFo7aQq_Mdt_TdsO-DqI5/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                   >
