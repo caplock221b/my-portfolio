@@ -24,21 +24,27 @@ export const getName = (name) => {
       return "MySQL";
     case "nextjs":
       return "NextJS";
+    case "nuxt":
+      return "NuxtJS";
     case "node":
       return "Node";
+    case "postgres":
+      return "PostgreSQL";
     case "python":
       return "Python";
     case "react":
       return "ReactJS";
+    case "recoil":
+      return "RecoilJS";
     case "redux":
       return "Redux";
     case "sass":
       return "Sass";
     case "sharepoint":
       return "MS SharePoint";
-    case "recoil":
-      return "RecoilJS";
-    case "postgres":
-      return "PostgreSQL";
+    case "tailwind":
+      return "TailwindCSS";
+    case "vue":
+      return "VueJS";
   }
 };
