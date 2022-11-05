@@ -19,14 +19,18 @@ const InternshipExp = ({ item }) => {
       <div className={styles.innerContainer}>
         <p className="c-blue">
           {item.role} at{" "}
-          <a
-            className={styles.site}
-            href={item.site ? item.site : ""}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {item.name}
-          </a>
+          {item.site ? (
+            <a
+              className={styles.site}
+              href={item.site ? item.site : ""}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {item.name}
+            </a>
+          ) : (
+            item.name
+          )}
         </p>
         <h4>
           {item.from} - {item.to}
